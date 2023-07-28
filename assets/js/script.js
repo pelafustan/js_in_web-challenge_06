@@ -45,10 +45,10 @@ async function createGraph(currency) {
     new Chart(canvas, {
         type: 'line',
         data: {
-            labels: dates,
+            labels: dates.reverse(),
             datasets: [{
                 label: `Last Ten Days ${currency} appreciation`,
-                data: currencyValue,
+                data: currencyValue.reverse(),
             }],
         },
     });
