@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/b36b85e4ea.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <main>
+      <section id="converter">
+        <div class="title">How much do I have?</div>
+        <div class="clp-input">
+          <label for="user-cash">Tell me your price, in CLP:</label>
+          <input type="number" name="user-cash" id="user-cash" min="0" placeholder="Give me the money!">
+        </div>
+        <div class="currency-selection">
+          <label for="currency-selector">In what currency do you want to know the price?</label>
+          <select name="currency-selector" id="currency-selector">
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="uf">UF</option>
+          </select>
+        </div>
+        <button type="button" id="convert-btn">Convert</button>
+        <div id="show-converted"></div>
+      </section>
+      <section id="graph-section">
+      </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
